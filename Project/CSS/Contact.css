@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+header{
+    padding: 10px;
+    background:rgba(0, 0, 0,0.8);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-logo{
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-logo span{
+    color: rgb(218, 7, 183); 
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+.navbar a:hover{
+    color: rgb(218, 7, 183);
+    transition: 0.5s;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+
+}
+
+.nav-reg{
+    margin-left: -40%;
+    margin-right: -25px;
+    border: 2px solid rgb(218, 7, 183);
+    padding: 14px 15px;
+    border-radius: 10px;
+}
+
+.nav-reg a{
+    padding: 10px;
+}
+
+.nav-reg span{
+    border: 1px solid rgb(218, 7, 183);
+    border-radius: 10px;
+}
+
+@media (max-width: 790px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: absolute;
+        left: 0;
+        top: -90%;
+        background:rgba(0, 0, 0,0.8);
+        width: 95%;
+        height: 50px;
+        text-align: center;
+        transition: 0.5s;
+        display: flex;
+    }
+
+    .nav-menu a{
+        width: 33.3%;
+        text-align: center;
+    }
+
+    .nav-menu.active {
+        top: 88px;
+        transition: 0.5s;
+    }
+}
+
+.contact-section{
+    background:rgba(0, 0, 0,0.8);
+    padding: 10px;
+}
+
+.contact-container{
+    display: flex;
+}
+
+.contact-form{
+    width: 70%;
+    height: auto;
+    text-align: left;
+    display: block;
+}
+
+.contact-form h3,
+.contact-form2 h3,
+.social-media h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact-form p,
+.contact-form2 p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contact-form input,
+textarea,
+.contact-form2 input{
+    width: 70%;
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.contact-form button,
+.contact-form2 button{
+    padding: 15px 35px;
+    display: block;
+    font-size: 12px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+
+.contact-form2{
+    width: 30%;
+    height: 100%;
+    text-align: left;
+}
+
+.newsletter{
+    height: 60%;
+}
+
+.social-media{
+    height: 40%;
+    border-top: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.social-media a{
+    font-size: 17px;
+    letter-spacing: 10px;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+}
+
+.footer-section{
+    width: 25%;
+    text-align: center;
+}
+
+.footer-section h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-section p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-section.social a{
+    letter-spacing: 5px;
+}
+
+.footer-section a:hover{
+    color: rgb(218, 7, 183);
+    transition: 0.5s;
+}
+
+.footer-bottom {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+}
+

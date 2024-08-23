@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animeSA</title>
+    <link rel="stylesheet" href="./CSS/Signup.css">
+    <link rel="icon" href="./IMAGE/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    
+    <section class="container forms">
+
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+
+                <form action="#">
+                    <div class="field">
+                        <input type="email" placeholder="Email" class="input" required>
+                    </div>
+
+                    <div class="field">
+                        <input type="password" placeholder="password" class="password" required>
+                        <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="" class="forgot-psw">Forgot Password?</a>
+                    </div>
+
+                    <div class="field">
+                        <button onclick="alert('Welcome')">Login</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Do not have an account?  <a href="" class="link signup-link">Signup</a></span>
+                 </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media-opt">
+                <a href="" class="field facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+
+            <div class="media-opt">
+                <a href="" class="field google">
+                    <i class="fa-brands fa-google" style="color: #a7a7a7;"></i>
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="form signup" id="signup" >
+            <div class="form-content" id="ValidateForm" >
+                <header>Signup</header>
+
+                <form action="#">
+                    <div class="field">
+                        <input type="email" placeholder="Email" class="input" id="email" >
+                    </div>
+
+                    <div class="field">
+                        <input type="password" placeholder="Set password" class="password" id="password" required>
+                        <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+
+                    <div class="field">
+                        <input type="password" placeholder="Confirm password" class="password" id="password2" required>
+                        <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+
+                    <div class="field">
+                        <button id="submit" >Signup</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Already have an account?  <a href="" class="link login-link">Login</a></span>
+                 </div>
+
+                 <div id="errorMessage"></div>
+
+                 <span id="errotText"></span>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media-opt">
+                <a href="" class="field facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span>Signup with Facebook</span>
+                </a>
+            </div>
+
+            <div class="media-opt">
+                <a href="" class="field google">
+                    <i class="fa-brands fa-google" style="color: #a7a7a7;"></i>
+                    <span>Signup with Google</span>
+                </a>
+            </div>
+        </div>
+        
+    </section>
+
+    
+    <button class = "btn">
+        <a href="./Project.html">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <p class="home">Go to home page</p>
+    </button>
+    
+
+    <script src="./JS/Signup.js"></script>
+</body>
+</html>

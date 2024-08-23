@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animeSA</title>
+    <link rel="stylesheet" href="./CSS/Contact.css">
+    <link rel="icon" href="./IMAGE/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="nav-logo"> anime<span>SA</span> </h1>
+
+            <ul class="nav-menu">
+                <li class="nav-item"></li>
+                <a href="./Project.html" class="link">HOME</a>
+
+                <li class="nav-item"></li>
+                <a href="./Content.html" class="link">CONTENT</a>
+
+                <li class="nav-item"></li>
+                <a href="./Contact.html" class="link">CONTACT</a>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </div>
+
+            <div class="nav-reg">
+                <a href="./Signup.html">Log in</a>
+            </div>
+            
+        </nav>
+    </header>
+
+    
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h3><i class="fa-regular fa-message"></i> Contact Form</h3>
+                <p>Send your message by filling this form:</p>
+                <form id="contact-form">
+                    <input type="text" id="contact-name" placeholder="Your Name" required>
+                    <input type="email" id="contact-email" placeholder="Your Email" required>
+                    <textarea id="contact-message" placeholder="Your Message" required></textarea>
+                    <button type="submit" onclick="alert(`Your Message has been sent successfully.`)">SUBMIT</button>
+                    <p id="contact-error" class="error-message"></p>
+                </form>
+            </div>
+
+            <div class="contact-form2">
+                <div class="newsletter">
+                    <h3>Subscribe to our Newsletter</h3>
+                    <p>To subscirbe to our newsletter fill in the form below: </p>
+                    <form id="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                        <p id="newsletter-error" class="error-message"></p>
+                    </form>
+                </div>
+
+                <div class="social-media">
+                    <h3>Follow Us On:</h3>
+                    <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"> <i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
+
+                    <h3>Email Us On:</h3>
+                    <p style="margin-top: -17px;">animeSA@gmail.com</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us:</h3>
+                <p>Welcome to animeSA,the best website to download premium anime content and 
+                    enjoy unlimited  source of anime content.</p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                    <li><a href="./Project.html">Home</a></li>
+                    <li><a href="./Content.html">Contentt</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>Contact Us On:</h3>
+                <p><i class="fa fa-map-marker"></i> 14, Garage Ikorodu lagos</p>
+                <p><i class="fa fa-phone"></i> (001)149135191</p>
+                <p><i class="fa fa-envelope"></i> animeSA@gmail.com</p>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Follow Us On:</h3>
+                <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="#"> <i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 animeSA. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="./JS/Contact.js"></script>
+    
+</body>
+</html>
